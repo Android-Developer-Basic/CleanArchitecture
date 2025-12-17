@@ -1,4 +1,4 @@
-package ru.otus.cleanarchitecture.entity
+package ru.otus.entity
 
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Serializable

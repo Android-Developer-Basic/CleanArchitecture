@@ -9,10 +9,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import ru.otus.cleanarchitecture.entity.CityForecast
 import ru.otus.cleanarchitecture.lce.LceState
 import ru.otus.cleanarchitecture.location.LocationProvider
 import ru.otus.cleanarchitecture.net.WeatherApi
+import ru.otus.entity.CityForecast
 import javax.inject.Inject
 
 @HiltViewModel

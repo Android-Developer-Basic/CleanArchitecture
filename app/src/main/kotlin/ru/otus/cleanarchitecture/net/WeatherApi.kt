@@ -2,7 +2,7 @@ package ru.otus.cleanarchitecture.net
 
 import retrofit2.http.GET
 import retrofit2.http.Query
-import ru.otus.cleanarchitecture.entity.CityForecast
+import ru.otus.entity.CityForecast
 
 interface WeatherApi {
     @GET("cityForecast")

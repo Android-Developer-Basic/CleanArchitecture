@@ -1,7 +1,7 @@
 package ru.otus.cleanarchitecture.location
 
 import kotlinx.coroutines.delay
-import ru.otus.cleanarchitecture.entity.Location
+import ru.otus.entity.Location
 import javax.inject.Inject
 import kotlin.time.Duration.Companion.seconds
 

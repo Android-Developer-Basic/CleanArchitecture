@@ -31,13 +31,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import kotlinx.coroutines.launch
 import kotlinx.datetime.LocalDate
 import ru.otus.cleanarchitecture.R
-import ru.otus.cleanarchitecture.entity.City
-import ru.otus.cleanarchitecture.entity.CityForecast
-import ru.otus.cleanarchitecture.entity.Location
-import ru.otus.cleanarchitecture.entity.Weather
 import ru.otus.cleanarchitecture.lce.LceState
 import ru.otus.cleanarchitecture.ui.theme.AppDimens
 import ru.otus.cleanarchitecture.ui.theme.CleanArchitectureTheme
+import ru.otus.entity.City
+import ru.otus.entity.CityForecast
+import ru.otus.entity.Location
+import ru.otus.entity.Weather
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

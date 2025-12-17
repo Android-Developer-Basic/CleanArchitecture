@@ -1,9 +1,7 @@
-package ru.otus.cleanarchitecture.entity
+package ru.otus.entity
 
-import androidx.compose.runtime.Immutable
 import kotlinx.serialization.Serializable
 
-@Immutable
 @Serializable
 data class CityForecast(
     val city: City,
