@@ -1,4 +1,4 @@
-package ru.otus.cleanarchitecture.lce
+package ru.otus.domain.lce
 
 /**
  * Loading - Content - Error state for data loading

@@ -31,9 +31,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import kotlinx.coroutines.launch
 import kotlinx.datetime.LocalDate
 import ru.otus.cleanarchitecture.R
-import ru.otus.cleanarchitecture.lce.LceState
 import ru.otus.cleanarchitecture.ui.theme.AppDimens
 import ru.otus.cleanarchitecture.ui.theme.CleanArchitectureTheme
+import ru.otus.domain.lce.LceState
 import ru.otus.entity.City
 import ru.otus.entity.CityForecast
 import ru.otus.entity.Location
@@ -77,18 +77,20 @@ fun ForecastScreen(
                     ForecastView(forecastData = forecastState.data)
                 }
                 is LceState.Loading -> {
-                    if (forecastState.data != null) {
+                    val data = forecastState.data
+                    if (data != null) {
                         Column(modifier = Modifier.fillMaxSize()) {
                             LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
-                            ForecastView(forecastData = forecastState.data)
+                            ForecastView(forecastData = data)
                         }
                     } else {
                         Loading(modifier = Modifier.fillMaxSize())
                     }
                 }
                 is LceState.Error -> {
-                    if (forecastState.data != null) {
-                        ForecastView(forecastData = forecastState.data)
+                    val data = forecastState.data
+                    if (data != null) {
+                        ForecastView(forecastData = data)
                         LaunchedEffect(forecastState.error) {
                             scope.launch {
                                 val result = snackbarHostState.showSnackbar(

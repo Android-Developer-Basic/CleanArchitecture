@@ -1,4 +1,4 @@
-package ru.otus.cleanarchitecture.net
+package ru.otus.data.net
 
 import retrofit2.http.GET
 import retrofit2.http.Query

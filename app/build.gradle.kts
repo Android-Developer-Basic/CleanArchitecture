@@ -44,7 +44,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":entity"))
+    implementation(project(":domain"))
+    implementation(project(":data"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -56,14 +57,8 @@ dependencies {
     implementation(libs.androidx.compose.material3.icons)
     implementation(libs.kotlinx.coroutines)
     implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.kotlinx.serialization.core)
-    implementation(libs.kotlinx.serialization.json)
-    implementation(libs.kotlinx.datetime)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
-    implementation(libs.net.okhttp)
-    implementation(libs.net.retrofit)
-    implementation(libs.net.retrofit.kotlin)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }

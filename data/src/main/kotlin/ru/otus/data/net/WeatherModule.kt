@@ -1,4 +1,4 @@
-package ru.otus.cleanarchitecture.net
+package ru.otus.data.net
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
