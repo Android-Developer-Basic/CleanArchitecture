@@ -1,6 +1,10 @@
-package ru.otus.entity
+package ru.otus.fakedata.repository
 
 import kotlinx.datetime.LocalDate
+import ru.otus.entity.City
+import ru.otus.entity.CityForecast
+import ru.otus.entity.Location
+import ru.otus.entity.Weather
 
 val sampleNovosibirskForecast = CityForecast(
     city = City("Novosibirsk", Location(55.0395, 82.8950)),

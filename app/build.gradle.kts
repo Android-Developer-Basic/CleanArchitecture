@@ -41,11 +41,25 @@ android {
     buildFeatures {
         compose = true
     }
+
+    flavorDimensions += "data"
+    productFlavors {
+        create("server") {
+            dimension = "data"
+        }
+        create("fake") {
+            dimension = "data"
+            applicationIdSuffix = ".mock"
+        }
+    }
 }
 
 dependencies {
     implementation(project(":domain"))
-    implementation(project(":data"))
+
+    "serverImplementation"(project(":data"))
+    "fakeImplementation"(project(":fakedata"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
