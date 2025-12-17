@@ -1,0 +1,63 @@
+{
+  "cityForecast": {
+    "city": {
+      "name": "Kazan",
+      "location": {
+        "lat": 55.7962,
+        "lon": 49.1222
+      }
+    },
+    "forecast": [
+      {
+        "date": "2025-12-27",
+        "temperature": -6.0,
+        "description": "Light snow"
+      },
+      {
+        "date": "2025-12-28",
+        "temperature": -7.5,
+        "description": "Snowy"
+      },
+      {
+        "date": "2025-12-29",
+        "temperature": -8.0,
+        "description": "Cloudy and cold"
+      },
+      {
+        "date": "2025-12-30",
+        "temperature": -9.0,
+        "description": "Heavy snow"
+      },
+      {
+        "date": "2025-12-31",
+        "temperature": -10.0,
+        "description": "Freezing"
+      },
+      {
+        "date": "2026-01-01",
+        "temperature": -9.5,
+        "description": "New Year's snow"
+      },
+      {
+        "date": "2026-01-02",
+        "temperature": -8.0,
+        "description": "Partly cloudy"
+      },
+      {
+        "date": "2026-01-03",
+        "temperature": -7.0,
+        "description": "Clear skies"
+      },
+      {
+        "date": "2026-01-04",
+        "temperature": -6.5,
+        "description": "Light breeze"
+      },
+      {
+        "date": "2026-01-05",
+        "temperature": -5.0,
+        "description": "Overcast"
+      }
+    ]
+  }
+}
