@@ -43,13 +43,23 @@ android {
     }
 
     flavorDimensions += "data"
+    flavorDimensions += "platform"
     productFlavors {
         create("server") {
             dimension = "data"
+            isDefault = true
         }
         create("fake") {
             dimension = "data"
             applicationIdSuffix = ".mock"
+        }
+        create("google") {
+            dimension = "platform"
+            isDefault = true
+        }
+        create("huawei") {
+            dimension = "platform"
+            applicationIdSuffix = ".huawei"
         }
     }
 }
@@ -59,6 +69,8 @@ dependencies {
 
     "serverImplementation"(project(":data"))
     "fakeImplementation"(project(":fakedata"))
+    "googleImplementation"(project(":location:google"))
+    "huaweiImplementation"(project(":location:huawei"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

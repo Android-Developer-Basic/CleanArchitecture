@@ -1,4 +1,4 @@
-package ru.otus.data.usecase
+package ru.otus.location.google.usecase
 
 import dagger.Binds
 import dagger.Module
@@ -8,7 +8,7 @@ import ru.otus.domain.usecase.LocationProvider
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class UsecaseModule {
+abstract class GoogleModule {
     @Binds
-    abstract fun locationProvider(impl: LocationProviderImpl): LocationProvider
+    abstract fun locationProvider(impl: GoogleLocationProvider): LocationProvider
 }
